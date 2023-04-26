@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Example</title>
+    <!-- include Leaflet CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- include Leaflet JavaScript file -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #mapid { /* set height for map container */
+            height: 400px;
+        }
+        /* apply box-sizing to all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* set margin and padding to 0 for the body element */
+body {
+    margin: 0;
+    padding: 100px;
+    /* text-align: center; */
+}
+
+/* set height for map container */
+#mapid {
+    margin:0 auto; 
+     height: 1000px;
+      width: 1000px; 
+    /* height: 100%; */
+    /* width: 100%; */ 
+}
+
+/* style marker icon */
+.leaflet-marker-icon {
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* style marker popup */
+.leaflet-popup-content {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 8px;
+    max-width: 200px;
+}
+
+/* style tile attribution */
+.leaflet-control-attribution {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* style map zoom control */
+.leaflet-control-zoom {
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+    </style>
+    
+</head>
+<body>
+    <div id="mapid"></div> <!-- create map container -->
+</body>
+<script  src="js/movingtrack.js"></script>
+<script src="js/location.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</html>
